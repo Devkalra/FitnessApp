@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class WorkoutPage extends StatefulWidget {
-  const WorkoutPage({Key? key}) : super(key: key);
+  final String workoutName;
+  const WorkoutPage({super.key,required this.workoutName});
 
   @override
   State<WorkoutPage> createState() => _WorkoutPageState();
